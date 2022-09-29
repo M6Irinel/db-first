@@ -1,0 +1,23 @@
+Create table auto_usate (
+    ID                         BIGINT            NOT NULL   UNIQUE   AUTO_INCREMENT   KEY_PRIMARY,
+    Marca                      VARCHAR(40)       NOT NULL,
+    Modello                    VARCHAR(40)       NOT NULL,
+    Targa                      VARCHAR(9)        NOT NULL   UNIQUE,
+    Nr_telaio                  VARCHAR(17)       NOT NULL   UNIQUE,
+    Nr_motore                  VARCHAR(255)      NOT NULL,
+    Colore                     VARCHAR(20)       NOT NULL,
+    Anno_fabricazione          DATE              NOT NULL,
+    Anno_immatricolazione      YEAR              NOT NULL,
+    Tipo_di_carburante         VARCHAR(8)        NOT NULL,
+    KM_fatti                   MEDIUMINT         NOT NULL,
+    Auto_tipo_euro             TINYINT           NOT NULL,
+    Peso                       SMALLINT          NOT NULL,
+    Data_bolo                  DATE              NOT NULL,
+    Data_revisione             DATE              NOT NULL,
+    Prezzo                     MEDIUMINT         NOT NULL,
+    Vechio_proprietario        VARCHAR(255)      NULL,
+    Potenza_in_KW              SMALLINT          NULL,
+    Cilindrata                 SMALLINT          NULL,
+    Tipo_di_motore             VARCHAR(7)        NULL,
+    Stato_incidentata          TINYINT           NULL
+);
