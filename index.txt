@@ -6,7 +6,7 @@ Create table auto_usate (
     Nr_telaio                  VARCHAR(17)       NOT NULL   UNIQUE,
     Nr_motore                  VARCHAR(255)      NOT NULL,
     Colore                     VARCHAR(20)       NOT NULL,
-    Anno_fabricazione          DATE              NOT NULL,
+    Data_fabricazione          DATE              NOT NULL,
     Anno_immatricolazione      YEAR              NOT NULL,
     Tipo_di_carburante         VARCHAR(8)        NOT NULL,
     KM_fatti                   MEDIUMINT         NOT NULL,
@@ -20,5 +20,6 @@ Create table auto_usate (
     Potenza_in_KW              SMALLINT          NULL,
     Cilindrata                 SMALLINT          NULL,
     Tipo_di_motore             VARCHAR(7)        NULL,
-    Stato_incidentata          TINYINT           NULL
+    Stato_incidentata          TINYINT           NULL,      # true or false
+    Nr_incidenti_vecchi        TINYINT           NULL
 );
