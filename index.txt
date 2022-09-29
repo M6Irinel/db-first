@@ -15,6 +15,7 @@ Create table auto_usate (
     Data_bolo                  DATE              NOT NULL,
     Data_revisione             DATE              NOT NULL,
     Prezzo                     MEDIUMINT         NOT NULL,
+    Nr_proprietari             TINYINT           NULL,
     Vechio_proprietario        VARCHAR(255)      NULL,
     Potenza_in_KW              SMALLINT          NULL,
     Cilindrata                 SMALLINT          NULL,
